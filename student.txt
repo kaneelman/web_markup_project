@@ -1,0 +1,3 @@
+student name : Japheth Fenton
+student number : 633240
+student class : it1B
