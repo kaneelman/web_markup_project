@@ -65,8 +65,9 @@ html {
 }
 
 body {
-    background-image: url('../img/background.png');
-	position: fixed;
+	background-color: #fff;
+   /* background-image: url('../img/background.png');
+	position: fixed;*/
 	width: 100%;
 }
 
@@ -76,14 +77,12 @@ body {
 	margin: auto;
 
 	text-align: center;
-	border: 2px #000 solid;
 
 }
 
 .main > * {
-	border: 2px #000 solid;
 	width: 100%;
-	margin: auto;
+	margin: 0.2rem auto;
 }
 
 header {
@@ -101,16 +100,16 @@ h1 {
 	color: white;
 }
 
+nav {
+	background-color: #707070;
+}
+
 .hamburger {
 	display: block;
 	position: relative;
-	top: 50px;
-	left: 50px;
+	padding: 0.4rem;
 	
 	z-index: 1;
-	
-	-webkit-user-select: none;
-	user-select: none;
 }
 
 .hamburger input {
@@ -121,89 +120,44 @@ h1 {
 	top: -7px;
 	left: -5px;
 	
-	cursor: pointer;
-	
-	opacity: 0; /* hide this */
-	z-index: 2; /* and place it over the hamburger */
-	
-	-webkit-touch-callout: none;
+	opacity: 0; 
+	z-index: 2; 
 }
 
 .hamburger span {
 	display: block;
 	width: 33px;
-	height: 4px;
-	margin-bottom: 5px;
+	height: 8px;
+	margin-bottom: 0.2rem;
 	position: relative;
 	
-	background: #cdcdcd;
-	border-radius: 3px;
+	background: #fff;
 	
 	z-index: 1;
-	
-	transform-origin: 4px 0px;
-	
-	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-				background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-				opacity 0.55s ease;
 }
 
-.hamburger span:first-child {
-	transform-origin: 0% 0%;
-}
-
-.hamburger span:nth-last-child(2) {
-	transform-origin: 0% 100%;
-}
 
 .hamburger input:checked ~ span {
 	opacity: 1;
-	transform: rotate(45deg) translate(-2px, -1px);
 	background: #232323;
 }
 
-.hamburger input:checked ~ span:nth-last-child(3)
-{
-	opacity: 0;
-	transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-.hamburger input:checked ~ span:nth-last-child(2)
-{
-	transform: rotate(-45deg) translate(0, -1px);
-}
 
 .menu
 {
-	position: absolute;
-	width: 300px;
-	margin: -100px 0 0 -50px;
-	padding: 50px;
-	padding-top: 125px;
-
-	background: #ededed;
-	list-style-type: none;
-	-webkit-font-smoothing: antialiased;
-	/* to stop flickering of text in safari */
-
-	transform-origin: 0% 0%;
-	transform: translate(-100%, 0);
-
-	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	position: static;
+	
+	display: none;
 }
 
 .menu li
 {
-  padding: 10px 0;
-  font-size: 22px;
+  font-size: 1.5em;
 }
 
-.hamburger input:checked ~ ul
+.hamburger input:checked ~ .menu
 {
-  transform: none;
+  display: inline;
 }
 
-nav a {
-	transition: color 0.2s ease;
-}
 
