@@ -209,10 +209,60 @@ h3 {
 
 
 /* Product page content */
+.products-header1 {
+	line-height: 2rem;
+	height: 2rem;
+}
 
+.catalog > figure:nth-child(1){
+	background-image: url('../img/product1.png');
+}
+
+.catalog > figure:nth-child(2){
+	background-image: url('../img/product2.png');
+}
+
+.catalog > figure:nth-child(3){
+	background-image: url('../img/product3.png');
+}
+
+.catalog > figure:nth-child(4){
+	background-image: url('../img/product4.png');
+}
+
+.catalog > figure:nth-child(5){
+	background-image: url('../img/product5.png');
+}
+
+.catalog > figure:nth-child(6){
+	background-image: url('../img/product6.png');
+}
+
+.catalog > figure:nth-child(7){
+	background-image: url('../img/product7.png');
+}
+
+.catalog > figure:nth-child(8){
+	background-image: url('../img/product8.png');
+}
+
+.catalog > figure:nth-child(9){
+	background-image: url('../img/product9.png');
+}
+
+.catalog > figure:nth-child(10){
+	background-image: url('../img/product10.png');
+}
+
+.catalog > figure:nth-child(11){
+	background-image: url('../img/product11.png');
+}
+
+.catalog > figure:nth-child(12){
+	background-image: url('../img/product12.png');
+}
 
 /* Contact page content */
-
 
 
 /* Footer style section (mobile) */
