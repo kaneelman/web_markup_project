@@ -106,11 +106,8 @@ h1 {
 }
 
 /* Navigation (+hamburger) style section (mobile) */
-nav {
-	background-color: #707070;
-}
-
 .hamburger {
+	background-color: #707070;
 	display: block;
 	position: relative;
 	padding: 0.4rem;
