@@ -22,18 +22,18 @@
 				<span></span>
 
 				<ul class='menu'>
-					<a href="product.html"><li>Products</li></a>
-					<a href="#"><li>Blog</li></a>
-					<a href="contact.html"><li>Contact</li></a>
+					<li><a href="product.html">Products</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</section>
 		</nav>
 		
         <section class='content'>
-			<h3>Contact</h3>
+			<h3 class='single-line'>Contact</h3>
 			<h4>More information</h4>
-			<form action="nowhere.php" method="post">
-				<fieldset>
+			<form action="nowhere.php" method="post"> 
+				<fieldset class="select-topic">
 					<label >Select topic</label>
 					<select>
 						<option value="general">General inquiries</option>
@@ -46,6 +46,7 @@
 							type="text"
 							name="contactFormName"
 							placeholder="Your name.."
+							class="textfield"
 					/>
 				</fieldset>
 				<fieldset class="contactFormFieldset">
@@ -53,6 +54,7 @@
 							type="email"
 							name="email"
 							placeholder="Your email.."
+							class="textfield"
 					/>
 				</fieldset>
 				<fieldset>
@@ -66,6 +68,7 @@
 				<input
 						type="submit"
 						value="Submit"
+						class="button"
 				/>
 			</form>
 		</section>
