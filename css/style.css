@@ -67,6 +67,7 @@ html, textarea {
     font-family: Arial, 'Times New Roman';
 }
 
+
 body {
 	background-color: #fff;
 	width: 100%;
@@ -79,6 +80,10 @@ body {
 
 	text-align: center;
 
+}
+
+video {
+	display:none;
 }
 
 /* Header style section (mobile) */
@@ -432,6 +437,7 @@ footer {
 	} */
 
 	#star-background {
+		display: block;
 		position: fixed;
 
 		top: -50%;
