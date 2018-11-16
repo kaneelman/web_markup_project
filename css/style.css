@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Spicy+Rice');
+@font-face {
+	font-family: 'Spicy Rice';
+	src: url('../fonts/SpicyRice-Regular.ttf');
+  }
 
 
 /* Down below is css to reset predefined values, a CSS reset */
@@ -75,10 +78,6 @@ body {
 	margin: auto;
 
 	text-align: center;
-
-}
-
-.main > * {
 
 }
 
@@ -174,7 +173,7 @@ article {
 	display: flex;
  }
 
- h3 {
+ h2 {
 	font-size: 1.5rem;
 	color: #fff;
 	text-transform: uppercase;
@@ -182,7 +181,7 @@ article {
 	max-width: 40%;
  }
 
- .content > article:first-child > h3 {
+ .content > article:first-child > h2 {
 	max-width: 70%;
  }
 
@@ -396,12 +395,12 @@ footer {
 		display: flex;
 	}
 
-	h3 {
+	h2 {
 		
 		max-width: 200px;
 	}
 
-	.index-content > article:first-child > h3 {
+	.index-content > article:first-child > h2 {
 		max-width: 300px;	
 	}
 	/* Product content style (tablet) */
@@ -427,11 +426,23 @@ footer {
 
 @media (min-width: 960px){
 	/* General style (Web)*/
-	body {
+	/* body {
 		background-image: url('../img/background.jpeg');
 		background-attachment: fixed;
 		background-repeat: no-repeat;
-		}
+	} */
+
+	#star-background {
+		position: fixed;
+
+		top: -50%;
+		left: -50%;
+		min-width: 100%; 
+		min-height: 100%;
+		width: auto; 
+		height: auto;
+		z-index: -100;
+	}
 
 	.main {
 		width: 45%;
@@ -443,12 +454,12 @@ footer {
 		height: 8rem;
 	}
 
-	.content > article > h3 {
+	.content > article > h2 {
 		font-size: 3rem;
 		max-width: 300px;
 	}
 
-	.content > article:first-child > h3 {
+	.content > article:first-child > h2 {
 		max-width: 500px;
 	}
 
@@ -480,7 +491,7 @@ footer {
 		height: 6rem;
 	}
 
-	.products-content > article > h3 {
+	.products-content > article > h2 {
 		max-width: 1000px;
 		font-size: 4rem;
 	}
@@ -500,7 +511,7 @@ footer {
 		height: 7rem;
 	}
 
-	#contact-header > h3 {
+	#contact-header > h2 {
 		font-size: 4.5rem;
 	}
 
